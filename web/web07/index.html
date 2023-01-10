@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("hola, inicio del programa");
+    </script>
+</head>
+<body>
+    <h1 class="example">Sesion web 07</h1>
+    <p id="parrafo">hola como estais</p>
+    <br>
+    <h4 id="test" onclick="testCambio()">test para cambiar color de letra</h4>
+    <h3 class="example"  id="demo" onclick="changeColor()">haz clic para cambiar</h3>
+    <h2 class="example" id="color" onclick="changeColorH2(this, 'green')">hola</h2>
+    <button  onclick="changeColorByClass('yellow')">amarillo</button>
+    <button  onclick="changeColorByClass('red')">rojo</button>
+    <script>
+        document.getElementById("parrafo").innerHTML = "Uso de la api DOM";
+    </script>
+    <script src="/script.js"></script>
+</body>
+</html>
