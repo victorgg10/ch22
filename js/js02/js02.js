@@ -117,3 +117,14 @@ function factoria(n) {
     }
 }
 console.log(factoria(5));
+
+function saludo(n, a = 1) {
+    console.log("hola" + a);
+    if (n == a)
+    return "adios " + n ;
+    //return 'hola ' + n +saludo(n-1);
+    return saludo(n, a+1);
+
+    
+}
+console.log(saludo(10));
